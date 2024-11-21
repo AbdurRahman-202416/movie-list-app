@@ -11,8 +11,8 @@ const Movie = ({ title, movie }) => {
 
   let image = `https://loremflickr.com/800/600/${key}?random=${movie.id}`;
   return (
-    <div className="w-[95%]  shadow-gray-600 sm:w-[95%]  m-3 mx-2 bg-gray-500 text-white rounded-lg shadow-xl ">
-      <img className="w-full h-[400px] object-cover" src={image} />
+    <div className="w-[90%] transition duration-300 hover:scale-105 transform-gpu shadow-gray-500 sm:w-[95%]  m-3 mx-4 bg-gray-600 text-white rounded-xl shadow-xl ">
+      <img className="w-full rounded-2xl border border-gray-400 shadow-md shadow-blue-300 h-[400px] object-cover" src={image} />
 
       <div className="p-4">
         <h2 className="text-xl font-bold ">{movie.movie}</h2>
